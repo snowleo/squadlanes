@@ -635,8 +635,8 @@ def convert_minimap_partial_path(
 
     partial_parts = path_split_recursive(minimap_partial_path)
 
-    # remove the leading "/" and the first directory part
-    partial_parts = partial_parts[2:]
+    # remove the leading "/" and the first three directory part
+    partial_parts = partial_parts[4:]
 
     # go through all unpacked assets ending with .uasset
     minimap_full_path = None
