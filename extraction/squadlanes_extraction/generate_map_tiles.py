@@ -46,7 +46,7 @@ def tiles():
                 f"type=bind,source={os.path.abspath(config.TILE_MAP_DIR)},target=/mnt/map-tiles",
                 f"--mount",
                 f"type=bind,source={os.getcwd()},target=/mnt/cwd",
-                f"osgeo/gdal",
+                f"ghcr.io/osgeo/gdal",
                 f"sh",
                 f"/mnt/cwd/generate-map-tiles.sh",
                 f"{os.getuid()}",
